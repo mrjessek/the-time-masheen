@@ -26,7 +26,7 @@ They each do a thing that connects the other things to like - get things really 
 
 **Scrapling**
 
-Scraply's the one that just, really gets webs. You give this address thing, and it just like, goes there and gets all your stuff. But then all these walls up and you're just like Sheeeesh, why even put that there. So you just can't go get really get it. So Scraplingy got like this thing about going in from different angles. The webs doesn't even know what happened and just gives you all the stuff. I don't even know, something about the clouds n coffee.
+Scraply's the one that just, really gets webs. You give this address thing, and it just like, goes there and gets all your stuff. But then all these walls come up and you're just like Sheeeesh, why even put that there. And then, you can't get it. So Scraplingy got like this thing about going in from different angles. The webs doesn't even know what happened and just gives all the stuff. I don't even know, something about the clouds n cafes.
 
 **Wayback Machine**
 
@@ -34,11 +34,11 @@ Okay, so there's this place that's been just like, saving all these copies of we
 
 **playwright**
 
-Some websites got this button stuff. And it's all "no you can't do that because you're not a person." So you're just like, yeah I am, and it's all like "ok here's all the stuff". Then you give that stuff to the other thing and it's all, "Hey, thanks for the stuff".
+Some websites got this button stuff. And it's all "no you can't do that because you're not kewl enough." So you're just like, yeah I am, and it's all like "ok here's all the stuff". Then you give that stuff to the other thing and it's all, "Hey, thanks for the stuff".
 
 ---
 
-## When You'd Use This
+## When Use This
 
 **Webs Changed.**
 Get the new stuff. Get the old stuff. Put the stuff together.
@@ -68,12 +68,12 @@ scrapling extract fetch "https://example.com" output.md --network-idle --wait 30
 scrapling extract stealthy-fetch "https://example.com" output.md --solve-cloudflare
 ```
 
-**Needs finds more old stuff**
+**Needs find more old stuff**
 ```bash
 curl -s "https://web.archive.org/cdx/search/cdx?url=example.com&output=json&collapse=timestamp:4&fl=timestamp,statuscode&filter=statuscode:200"
 ```
 
-**Back in 2022**
+**Stuff in 2022**
 ```bash
 scrapling extract get "https://web.archive.org/web/20220601000000/https://example.com/" old.md
 ```
@@ -85,7 +85,7 @@ diff old.md output.md
 
 ---
 
-## What You Gonna Need
+## What Need
 
 - Scrapling: `pip install "scrapling[all]"`
 - playwright: `npm install -g playwright-cli`
