@@ -26,7 +26,7 @@ They each do a thing that connects the other things to like - get things really 
 
 **Scrapling**
 
-Scraply's the one that just, really gets websites. You give this address thing, and it just like, goes there and gets all your stuff. But then all these walls up and you're just like Sheeeesh, why even put that there. So you just can't go get really get it. So Scraplingy got like this thing about going in from different angles. The webs doesn't even know what happened and just gives you all the stuff. I don't even know, something about the clouds n coffee.
+Scraply's the one that just, really gets webs. You give this address thing, and it just like, goes there and gets all your stuff. But then all these walls up and you're just like Sheeeesh, why even put that there. So you just can't go get really get it. So Scraplingy got like this thing about going in from different angles. The webs doesn't even know what happened and just gives you all the stuff. I don't even know, something about the clouds n coffee.
 
 **Wayback Machine**
 
