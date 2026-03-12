@@ -26,7 +26,7 @@ Need web data?
 │    └─ Wayback CDX API → scrape snapshot via Scrapling or web_fetch
 │
 ├─ Need to click / log in / fill forms first?
-│    └─ playwright-cli → grab session cookies → hand off to Scrapling
+│    └─ playwright-cli → authenticate → hand off to Scrapling
 │
 └─ Just current content?
      ├─ Static / simple       → scrapling get
@@ -125,8 +125,8 @@ playwright-cli close
 ### Handoff pattern — authenticate then bulk scrape
 ```bash
 # 1. playwright-cli open → log in → navigate to target
-# 2. playwright-cli eval "document.cookie"  # grab session
-# 3. scrapling extract get <url> output.md --cookies "<cookies>"
+# 2. playwright-cli screenshot  # verify you're authenticated
+# 3. scrapling extract get <url> output.md  # scrape while session is active
 ```
 
 ---
@@ -155,9 +155,22 @@ playwright-cli open https://example.com/login
 playwright-cli fill e5 "your@email.com"
 playwright-cli fill e6 "password"
 playwright-cli press Enter
-playwright-cli eval "document.cookie"  # → paste into --cookies below
-scrapling extract get "https://example.com/members/content" output.md --cookies "<session>"
+playwright-cli screenshot  # verify you're in
+scrapling extract get "https://example.com/members/content" output.md
 ```
+
+---
+
+## Security
+
+This skill opens real browser sessions and can scrape login-protected pages. A few things to understand before using it:
+
+- **You control the browser.** playwright-cli drives a browser on your machine. It navigates to URLs you specify and interacts with elements you tell it to.
+- **All data stays local.** Any session state used during automation exists only on your machine and is used only for the scraping task you initiate.
+- **Use only on sites you have access to.** This skill is designed for legitimate web research — competitive intelligence, content monitoring, archival work, and accessing sites you have an account on. It is not a tool for unauthorized access.
+- **Review commands before running.** As with any automation tool, understand what you're running before you run it.
+
+---
 
 ### CLI-Anything — make any software agent-native
 When you need a full CLI harness for any desktop or web application:
