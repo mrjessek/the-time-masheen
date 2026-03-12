@@ -22,7 +22,7 @@ They each do a thing that connects the other things to like - get things really 
 
 ---
 
-## The Three Parts
+## These Three Things
 
 **Scrapling**
 
