@@ -30,7 +30,7 @@ Scraply's the one that just, really gets webs. You give this address thing, and 
 
 **Wayback Machine**
 
-Okay, so there's this place on the internet that's been just like, saving all these copies of webs since, like, forever. All of it. Just sitting there. So when someone acts all "I dunno". You're like, yeah you know.
+Okay, so there's this place that's been just like, saving all these copies of webs since, like, forever. All of it. Just sitting there. So when someone acts all "I dunno". You're like, yeah you know.
 
 **playwright**
 
