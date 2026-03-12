@@ -1,6 +1,6 @@
 ---
 name: time-masheen
-description: THE_TIME_MASHEEN — full-spectrum web intelligence combining live scraping, historical time travel, and interactive browser automation. Use when: (1) scraping or crawling any live website (static, JS-heavy, or anti-bot protected), (2) going back in time to retrieve archived or historical versions of any page via the Wayback Machine, (3) comparing what a site looks like now vs. what it looked like in any previous year, (4) automating browser interactions (login, click, fill forms) on web apps that can't be passively scraped, (5) extracting data from login-gated or paywalled pages, or (6) any task requiring live scraping + historical research + browser interaction in combination. Triggers on: "scrape this", "crawl", "wayback", "archive", "what did this site look like", "compare current vs historical", "browser automation", "extract data from", "log in and scrape", "go back in time on".
+description: THE_TIME_MASHEEN — full-spectrum web intelligence combining live scraping, historical time travel, and interactive browser automation. Use when: (1) scraping or crawling any live website (static, JS-heavy, or rendering-protected), (2) going back in time to retrieve archived or historical versions of any page via the Wayback Machine, (3) comparing what a site looks like now vs. what it looked like in any previous year, (4) automating browser interactions (login, click, fill forms) on web apps that can't be passively scraped, (5) extracting data from login-gated or paywalled pages, or (6) any task requiring live scraping + historical research + browser interaction in combination. Triggers on: "scrape this", "crawl", "wayback", "archive", "what did this site look like", "compare current vs historical", "browser automation", "extract data from", "log in and scrape", "go back in time on".
 ---
 
 # THE_TIME_MASHEEN
@@ -31,7 +31,7 @@ Need web data?
 └─ Just current content?
      ├─ Static / simple       → scrapling get
      ├─ JS-heavy / React      → scrapling fetch --network-idle
-     └─ Anti-bot / Cloudflare → scrapling stealthy-fetch --solve-cloudflare
+     └─ Heavily protected sites → scrapling stealthy-fetch --solve-cloudflare
 ```
 
 ---
@@ -47,7 +47,7 @@ scrapling extract get "https://example.com" output.md
 # 2. JS-heavy / React / Next.js / dynamic content
 scrapling extract fetch "https://example.com" output.md --network-idle --wait 3000
 
-# 3. Cloudflare / anti-bot protected
+# 3. Cloudflare / rendering-protected
 scrapling extract stealthy-fetch "https://example.com" output.md --solve-cloudflare
 ```
 
